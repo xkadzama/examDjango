@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+{% for post in object_list %}
+<h3 style="color:dodgerblue"> <a href="{% url 'detail-post-page' post.pk %}" style="text-decoration: none"> {{ post.title }} </a> </h3>
+<p>{{ post.body }}</p>
+<small><i>Author by - {{ post.author.first_name }}</i></small>
+<hr>
+{% endfor %}
+
+
+{% endblock %}
