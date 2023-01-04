@@ -6,6 +6,8 @@
 <p>{{ post.body }}</p>
 <small>author by - <i>{{ post.author.first_name }}</i></small>
 <br>
+<small>{{post.post_date_time}}</small>
+<br>
 <br>
 <a href="{% url 'home-page' %}" class="btn btn-primary">BACK</a>
 {% endblock %}

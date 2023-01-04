@@ -7,6 +7,8 @@
 <p>{{ post.body }}</p>
 <small><i>Author by - {{ post.author.first_name }}</i></small>
 <br>
+<small>{{post.post_date_time}}</small>
+<br>
 <small><a href="{% url 'update-post-page' post.pk %}" style="text-decoration: none;">[Update]</a></small>
 <small><a href="{% url 'delete-post-page' post.pk %}" style="text-decoration: none;">[Delete]</a></small>
 <hr>
