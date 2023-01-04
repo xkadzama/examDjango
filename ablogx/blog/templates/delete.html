@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+
+<div class="#" style="text-align: center;">
+<div class="form-group">
+<form method="POST">
+    {% csrf_token %}
+    <h3 style="color:dodgerblue">{{post.title}} </h3>
+    <p> Are you sure? </p>
+    <button class="btn btn-danger">YES</button>
+    <a href="{% url 'home-page' %}" class="btn btn-primary">NO</a>
+</form>
+</div>
+</div>
+{% endblock %}
